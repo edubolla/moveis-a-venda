@@ -58,13 +58,15 @@ main {
 
 .card-images {
   display: block;
+  aspect-ratio: 4 / 3;
   background: #e4e4e7;
+  overflow: hidden;
 }
 
 .card-images img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
 }
 
