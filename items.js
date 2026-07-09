@@ -12,10 +12,10 @@ const ITEMS = [
     driveUrl: "COLOQUE_O_LINK_AQUI",
   },
   {
-    id: "fogao-venax",
-    name: "Fogão Venax",
+    id: "fogao-venax-botijao",
+    name: "Fogão Venax + botijão de gás",
     price: 100,
-    cover: "/covers/fogao-venax.jpeg",
+    covers: ["/covers/fogao-venax.jpeg", "/covers/botijao-gas.jpeg"],
     driveUrl: "COLOQUE_O_LINK_AQUI",
   },
   {
@@ -23,13 +23,6 @@ const ITEMS = [
     name: "Geladeira",
     price: 100,
     cover: "/covers/geladeira.jpeg",
-    driveUrl: "COLOQUE_O_LINK_AQUI",
-  },
-  {
-    id: "botijao-gas",
-    name: "Botijão de gás",
-    price: 100,
-    cover: "/covers/botijao-gas.jpeg",
     driveUrl: "COLOQUE_O_LINK_AQUI",
   },
   {

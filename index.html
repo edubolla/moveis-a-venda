@@ -29,11 +29,18 @@
       ITEMS.forEach((item) => {
         const hasDrive =
           item.driveUrl && item.driveUrl !== "COLOQUE_O_LINK_AQUI";
+        const images = item.covers || [item.cover];
+        const imagesHtml = images
+          .map(
+            (src) =>
+              `<img src="${src}" alt="${item.name}" loading="lazy" />`
+          )
+          .join("");
 
         const card = document.createElement("article");
         card.className = "card";
         card.innerHTML = `
-          <img src="${item.cover}" alt="${item.name}" loading="lazy" />
+          <div class="card-images${images.length > 1 ? " card-images--duo" : ""}">${imagesHtml}</div>
           <div class="card-body">
             <h2>${item.name}</h2>
             <p class="price">${formatPrice(item.price)}</p>

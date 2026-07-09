@@ -56,12 +56,21 @@ main {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.card img {
+.card-images {
+  display: block;
+  background: #e4e4e7;
+}
+
+.card-images img {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  background: #e4e4e7;
+}
+
+.card-images--duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card-body {
