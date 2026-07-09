@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Móveis à venda</title>
+    <meta
+      name="description"
+      content="Móveis e itens usados à venda. Veja fotos e entre em contato pelo WhatsApp."
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Móveis à venda</h1>
+      <p>Toque no item para ver mais fotos ou falar comigo no WhatsApp</p>
+    </header>
+
+    <main>
+      <div class="grid" id="gallery"></div>
+    </main>
+
+    <footer>Valores de referência — confirme no WhatsApp</footer>
+
+    <script src="/items.js"></script>
+    <script>
+      const gallery = document.getElementById("gallery");
+
+      ITEMS.forEach((item) => {
+        const hasDrive =
+          item.driveUrl && item.driveUrl !== "COLOQUE_O_LINK_AQUI";
+
+        const card = document.createElement("article");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${item.cover}" alt="${item.name}" loading="lazy" />
+          <div class="card-body">
+            <h2>${item.name}</h2>
+            <p class="price">${formatPrice(item.price)}</p>
+            <div class="actions">
+              <a
+                class="btn btn-drive ${hasDrive ? "" : "disabled"}"
+                href="${hasDrive ? item.driveUrl : "#"}"
+                ${hasDrive ? 'target="_blank" rel="noopener"' : ""}
+              >
+                ${hasDrive ? "Ver todas as fotos" : "Fotos em breve"}
+              </a>
+              <a
+                class="btn btn-whatsapp"
+                href="${whatsappUrl(item.name)}"
+                target="_blank"
+                rel="noopener"
+              >
+                Tenho interesse — WhatsApp
+              </a>
+            </div>
+          </div>
+        `;
+        gallery.appendChild(card);
+      });
+    </script>
+  </body>
+</html>
