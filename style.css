@@ -92,6 +92,11 @@ main {
   color: #16a34a;
 }
 
+.price--pending {
+  color: #71717a;
+  font-weight: 600;
+}
+
 .actions {
   display: flex;
   flex-direction: column;
