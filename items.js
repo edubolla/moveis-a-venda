@@ -61,6 +61,12 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
   },
   {
+    id: "vendido-tv",
+    name: "TV Philips Ambilight 50 polegadas",
+    sold: true,
+    cover: "/covers/vendido-tv.jpeg",
+  },
+  {
     id: "vendido-armario-branco",
     name: "Armário branco",
     sold: true,
@@ -82,27 +88,18 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1-Of--6apzRDsAMpa01noy7cyTD0hxd2K",
   },
   {
+    id: "vendido-sapateira",
+    name: "Sapateira / armário organizador",
+    sold: true,
+    cover: "/covers/vendido-sapateira.jpeg",
+  },
+  {
     id: "rack-tv",
     name: "Rack para TV",
     details: "1,60 L × 40 P",
     price: 120,
     cover: "/covers/rack-tv.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1wEn58ETMXmnKT-EOVxRUmjMb9mB6bPUm",
-  },
-  {
-    id: "tv",
-    name: "TV Philips Ambilight 50 polegadas",
-    price: 1300,
-    cover: "/covers/tv.jpeg",
-    driveUrl: "https://drive.google.com/drive/folders/1iCQ_E2j6bPf2OZF20Hce75kzD6mW9xlX",
-  },
-  {
-    id: "sapateira",
-    name: "Sapateira / armário organizador",
-    details: "1,70 A × 50 L × 40 P",
-    price: 120,
-    cover: "/covers/sapateira.jpeg",
-    driveUrl: "https://drive.google.com/drive/folders/12seLcUt1LRmoAktNnl2bXiG7SpfNEZOR",
   },
 ];
 
