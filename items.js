@@ -40,6 +40,14 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1J5lMypuTsspYTbQM-mUn-WegbWlLTT5P",
   },
   {
+    id: "air-fryer-nell",
+    name: "Air Fryer Nell Smart",
+    details: "2,4 L",
+    price: 120,
+    cover: "/covers/air-fryer-nell.jpeg",
+    driveUrl: "https://drive.google.com/drive/folders/1Yw6lWROola1duVbAG0_Z1BJVH-uVw-rI",
+  },
+  {
     id: "estante-preta",
     name: "Estante preta / balcão",
     price: 200,
@@ -53,11 +61,11 @@ const ITEMS = [
     cover: "/covers/vendido-armario-branco.jpeg",
   },
   {
-    id: "guarda-roupa-madeira",
+    id: "guarda-roupa-marrom",
     name: "Guarda-roupa marrom",
     details: "1,60 L × 1,80 A × 50 P",
     price: 550,
-    cover: "/covers/guarda-roupa-madeira.jpeg",
+    cover: "/covers/guarda-roupa-marrom.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1qKW2tbkC0ke7Ik83yEYlvV1i9fnNk6Lx",
   },
   {
@@ -68,11 +76,11 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1-Of--6apzRDsAMpa01noy7cyTD0hxd2K",
   },
   {
-    id: "painel-tv-branco",
+    id: "rack-tv",
     name: "Rack para TV",
     details: "1,60 L × 40 P",
     price: 120,
-    cover: "/covers/painel-tv-branco.jpeg",
+    cover: "/covers/rack-tv.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1wEn58ETMXmnKT-EOVxRUmjMb9mB6bPUm",
   },
   {
@@ -83,18 +91,18 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1iCQ_E2j6bPf2OZF20Hce75kzD6mW9xlX",
   },
   {
-    id: "armario-branco-organizador",
+    id: "sapateira",
     name: "Sapateira / armário organizador",
     details: "1,70 A × 50 L × 40 P",
     price: 120,
-    cover: "/covers/armario-branco-organizador.jpeg",
+    cover: "/covers/sapateira.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/12seLcUt1LRmoAktNnl2bXiG7SpfNEZOR",
   },
   {
-    id: "xiaomi-smart-band-7",
+    id: "mi-band-7",
     name: "Mi Band 7",
     price: 60,
-    cover: "/covers/xiaomi-smart-band-7.jpeg",
+    cover: "/covers/mi-band-7.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1b03V2_I53MGld97CAJvFnakiQb8HtxVw",
   },
 ];
