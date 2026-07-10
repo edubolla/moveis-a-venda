@@ -69,7 +69,7 @@ const ITEMS = [
   {
     id: "guarda-roupa-marrom",
     name: "Guarda-roupa marrom",
-    details: "1,60 L × 1,80 A × 50 P",
+    details: "1,60 L × 2,00 A × 45 P",
     price: 550,
     cover: "/covers/guarda-roupa-marrom.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1qKW2tbkC0ke7Ik83yEYlvV1i9fnNk6Lx",
