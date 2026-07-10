@@ -56,7 +56,7 @@ const ITEMS = [
   {
     id: "estante-preta",
     name: "Estante preta / balcão",
-    price: 200,
+    price: 400,
     cover: "/covers/estante-preta.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
   },
