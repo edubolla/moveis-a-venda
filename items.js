@@ -48,6 +48,12 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1Yw6lWROola1duVbAG0_Z1BJVH-uVw-rI",
   },
   {
+    id: "vendido-mi-band-7",
+    name: "Mi Band 7",
+    sold: true,
+    cover: "/covers/vendido-mi-band-7.jpeg",
+  },
+  {
     id: "estante-preta",
     name: "Estante preta / balcão",
     price: 200,
@@ -97,13 +103,6 @@ const ITEMS = [
     price: 120,
     cover: "/covers/sapateira.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/12seLcUt1LRmoAktNnl2bXiG7SpfNEZOR",
-  },
-  {
-    id: "mi-band-7",
-    name: "Mi Band 7",
-    price: 60,
-    cover: "/covers/mi-band-7.jpeg",
-    driveUrl: "https://drive.google.com/drive/folders/1b03V2_I53MGld97CAJvFnakiQb8HtxVw",
   },
 ];
 
