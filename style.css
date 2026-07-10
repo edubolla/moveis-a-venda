@@ -85,6 +85,12 @@ main {
   font-weight: 600;
 }
 
+.details {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: #71717a;
+}
+
 .price {
   margin: 0 0 0.75rem;
   font-size: 1.1rem;

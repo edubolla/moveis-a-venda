@@ -48,7 +48,8 @@ const ITEMS = [
   },
   {
     id: "painel-tv-branco",
-    name: "Painel de TV branco",
+    name: "Rack para TV",
+    details: "1,60 L × 40 P",
     price: 100,
     cover: "/covers/painel-tv-branco.jpeg",
     driveUrl: "COLOQUE_O_LINK_AQUI",
@@ -62,7 +63,8 @@ const ITEMS = [
   },
   {
     id: "armario-branco-organizador",
-    name: "Armário organizador branco",
+    name: "Sapateira / armário organizador",
+    details: "1,70 A × 50 L × 40 P",
     price: 120,
     cover: "/covers/armario-branco-organizador.jpeg",
     driveUrl: "COLOQUE_O_LINK_AQUI",
@@ -78,7 +80,7 @@ const ITEMS = [
 
 function whatsappUrl(itemName) {
   const text = encodeURIComponent(
-    `Olá! Tenho interesse no item: ${itemName}. Vi no site de venda de móveis.`
+    `Olá! Tenho interesse no item: ${itemName}. Vi no Brick do Edu.`
   );
   return `https://wa.me/${WHATSAPP}?text=${text}`;
 }

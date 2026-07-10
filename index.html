@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Móveis à venda</title>
+    <title>Brick do Edu</title>
     <meta
       name="description"
-      content="Móveis e itens usados à venda. Veja fotos e entre em contato pelo WhatsApp."
+      content="Brick do Edu — móveis e itens usados à venda. Veja fotos e fale no WhatsApp."
     />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <header>
-      <h1>Móveis à venda</h1>
-      <p>Toque no item para ver mais fotos ou falar comigo no WhatsApp</p>
+      <h1>Brick do Edu</h1>
+      <p>Móveis e itens à venda — veja fotos ou fale comigo no WhatsApp</p>
     </header>
 
     <main>
       <div class="grid" id="gallery"></div>
     </main>
 
-    <footer>Valores de referência — confirme no WhatsApp</footer>
+    <footer>Brick do Edu — valores de referência, confirme no WhatsApp</footer>
 
     <script src="/items.js"></script>
     <script>
@@ -43,6 +43,7 @@
           <div class="card-images${images.length > 1 ? " card-images--duo" : ""}">${imagesHtml}</div>
           <div class="card-body">
             <h2>${item.name}</h2>
+            ${item.details ? `<p class="details">${item.details}</p>` : ""}
             <p class="price${item.price == null ? " price--pending" : ""}">${formatPrice(item.price)}</p>
             <div class="actions">
               <a
