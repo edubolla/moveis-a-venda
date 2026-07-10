@@ -4,6 +4,7 @@ const ITEMS = [
   {
     id: "cozinha",
     name: "Cozinha (armários e pia)",
+    details: "1,90 L",
     price: 500,
     cover: "/covers/cozinha.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1RXtLRrOJRiKtKUh987-InBSDQVoIsuwm",
@@ -54,6 +55,7 @@ const ITEMS = [
   {
     id: "guarda-roupa-madeira",
     name: "Guarda-roupa marrom",
+    details: "1,60 L × 1,80 A × 50 P",
     price: null,
     cover: "/covers/guarda-roupa-madeira.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1qKW2tbkC0ke7Ik83yEYlvV1i9fnNk6Lx",
