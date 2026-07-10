@@ -21,7 +21,7 @@ const ITEMS = [
     id: "geladeira",
     name: "Geladeira Electrolux",
     details: "382 L · Frost Free",
-    price: 1700,
+    price: 1500,
     cover: "/covers/geladeira.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1Zcy7DMmvQWakag6nqkIPONKD7Wni0ckw",
   },
@@ -78,7 +78,7 @@ const ITEMS = [
   {
     id: "tv",
     name: "TV Philips Ambilight 50 polegadas",
-    price: 1500,
+    price: 1300,
     cover: "/covers/tv.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1iCQ_E2j6bPf2OZF20Hce75kzD6mW9xlX",
   },
