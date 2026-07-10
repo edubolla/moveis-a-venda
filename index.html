@@ -27,8 +27,9 @@
       const gallery = document.getElementById("gallery");
 
       ITEMS.forEach((item) => {
+        const sold = Boolean(item.sold);
         const hasDrive =
-          item.driveUrl && item.driveUrl !== "COLOQUE_O_LINK_AQUI";
+          !sold && item.driveUrl && item.driveUrl !== "COLOQUE_O_LINK_AQUI";
         const images = item.covers || [item.cover];
         const imagesHtml = images
           .map(
@@ -38,31 +39,49 @@
           .join("");
 
         const card = document.createElement("article");
-        card.className = "card";
-        card.innerHTML = `
-          <div class="card-images${images.length > 1 ? " card-images--duo" : ""}">${imagesHtml}</div>
-          <div class="card-body">
-            <h2>${item.name}</h2>
-            ${item.details ? `<p class="details">${item.details}</p>` : ""}
-            <p class="price${item.price == null ? " price--pending" : ""}">${formatPrice(item.price)}</p>
-            <div class="actions">
-              <a
-                class="btn btn-drive ${hasDrive ? "" : "disabled"}"
-                href="${hasDrive ? item.driveUrl : "#"}"
-                ${hasDrive ? 'target="_blank" rel="noopener"' : ""}
-              >
-                ${hasDrive ? "Ver todas as fotos" : "Fotos em breve"}
-              </a>
-              <a
-                class="btn btn-whatsapp"
-                href="${whatsappUrl(item.name)}"
-                target="_blank"
-                rel="noopener"
-              >
-                Tenho interesse — WhatsApp
-              </a>
+        card.className = sold ? "card card--sold" : "card";
+
+        let bodyHtml;
+        if (sold) {
+          bodyHtml = `
+            <div class="card-body">
+              <h2>${item.name}</h2>
+              <p class="sold-label">Vendido</p>
             </div>
+          `;
+        } else {
+          bodyHtml = `
+            <div class="card-body">
+              <h2>${item.name}</h2>
+              ${item.details ? `<p class="details">${item.details}</p>` : ""}
+              <p class="price${item.price == null ? " price--pending" : ""}">${formatPrice(item.price)}</p>
+              <div class="actions">
+                <a
+                  class="btn btn-drive ${hasDrive ? "" : "disabled"}"
+                  href="${hasDrive ? item.driveUrl : "#"}"
+                  ${hasDrive ? 'target="_blank" rel="noopener"' : ""}
+                >
+                  ${hasDrive ? "Ver todas as fotos" : "Fotos em breve"}
+                </a>
+                <a
+                  class="btn btn-whatsapp"
+                  href="${whatsappUrl(item.name)}"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Tenho interesse — WhatsApp
+                </a>
+              </div>
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="card-images${images.length > 1 ? " card-images--duo" : ""}">
+            ${imagesHtml}
+            ${sold ? '<span class="sold-badge">Vendido</span>' : ""}
           </div>
+          ${bodyHtml}
         `;
         gallery.appendChild(card);
       });
