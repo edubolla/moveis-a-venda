@@ -25,6 +25,12 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1Zcy7DMmvQWakag6nqkIPONKD7Wni0ckw",
   },
   {
+    id: "vendido-sofa",
+    name: "Sofá",
+    sold: true,
+    cover: "/covers/vendido-sofa.jpeg",
+  },
+  {
     id: "microondas",
     name: "Micro-ondas Panasonic",
     details: "20 L",
@@ -38,6 +44,12 @@ const ITEMS = [
     price: 200,
     cover: "/covers/estante-preta.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
+  },
+  {
+    id: "vendido-armario-branco",
+    name: "Armário branco",
+    sold: true,
+    cover: "/covers/vendido-armario-branco.jpeg",
   },
   {
     id: "guarda-roupa-madeira",
@@ -74,7 +86,7 @@ const ITEMS = [
     details: "1,70 A × 50 L × 40 P",
     price: 120,
     cover: "/covers/armario-branco-organizador.jpeg",
-    driveUrl: "COLOQUE_O_LINK_AQUI",
+    driveUrl: "https://drive.google.com/drive/folders/12seLcUt1LRmoAktNnl2bXiG7SpfNEZOR",
   },
   {
     id: "xiaomi-smart-band-7",
@@ -82,18 +94,6 @@ const ITEMS = [
     price: 60,
     cover: "/covers/xiaomi-smart-band-7.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1b03V2_I53MGld97CAJvFnakiQb8HtxVw",
-  },
-  {
-    id: "vendido-armario-branco",
-    name: "Armário branco",
-    sold: true,
-    cover: "/covers/vendido-armario-branco.jpeg",
-  },
-  {
-    id: "vendido-sofa",
-    name: "Sofá",
-    sold: true,
-    cover: "/covers/vendido-sofa.jpeg",
   },
 ];
 
