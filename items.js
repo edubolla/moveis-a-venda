@@ -56,9 +56,25 @@ const ITEMS = [
   {
     id: "estante-preta",
     name: "Estante preta / balcão",
+    details: "2,35 L · formato irregular",
     price: 400,
     cover: "/covers/estante-preta.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
+  },
+  {
+    id: "mesa-centro",
+    name: "Mesa de centro",
+    price: 200,
+    cover: "/covers/mesa-centro.jpeg",
+    driveUrl: "https://drive.google.com/drive/folders/1_83Vhif7zfL39gm9iMTQfDTougW9Z2ve",
+  },
+  {
+    id: "prateleira",
+    name: "Prateleira",
+    details: "2,00 L × 35 P",
+    price: 100,
+    cover: "/covers/prateleira.jpeg",
+    driveUrl: "COLOQUE_O_LINK_AQUI",
   },
   {
     id: "vendido-tv",
