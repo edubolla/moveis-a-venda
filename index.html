@@ -56,13 +56,11 @@
               ${item.details ? `<p class="details">${item.details}</p>` : ""}
               <p class="price${item.price == null ? " price--pending" : ""}">${formatPrice(item.price)}</p>
               <div class="actions">
-                <a
-                  class="btn btn-drive ${hasDrive ? "" : "disabled"}"
-                  href="${hasDrive ? item.driveUrl : "#"}"
-                  ${hasDrive ? 'target="_blank" rel="noopener"' : ""}
-                >
-                  ${hasDrive ? "Ver todas as fotos" : "Fotos em breve"}
-                </a>
+                ${
+                  hasDrive
+                    ? `<a class="btn btn-drive" href="${item.driveUrl}" target="_blank" rel="noopener">Ver todas as fotos</a>`
+                    : ""
+                }
                 <a
                   class="btn btn-whatsapp"
                   href="${whatsappUrl(item.name)}"

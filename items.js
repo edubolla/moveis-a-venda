@@ -74,7 +74,6 @@ const ITEMS = [
     details: "2,00 L × 35 P",
     price: 100,
     cover: "/covers/prateleira.jpeg",
-    driveUrl: "COLOQUE_O_LINK_AQUI",
   },
   {
     id: "vendido-tv",
