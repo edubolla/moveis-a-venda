@@ -77,6 +77,14 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1_83Vhif7zfL39gm9iMTQfDTougW9Z2ve",
   },
   {
+    id: "mesa-jantar",
+    name: "Mesa de jantar com 6 cadeiras",
+    details: "1,60 L × 0,90 P × 80 A",
+    price: 500,
+    cover: "/covers/mesa-jantar.jpeg",
+    driveUrl: "https://drive.google.com/drive/folders/10pPZEcoVqE_--xJC84gqcAw1Td1zIPBF",
+  },
+  {
     id: "prateleira",
     name: "Prateleira",
     details: "2,00 L × 35 P",
