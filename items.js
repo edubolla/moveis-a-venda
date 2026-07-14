@@ -43,7 +43,7 @@ const ITEMS = [
     id: "sofa-marrom",
     name: "Sofá marrom 4 lugares",
     details: "Retrátil dos dois lados · 2,15 L × 100 P",
-    price: null,
+    price: 990,
     cover: "/covers/sofa-marrom.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1TpHZLQlJ1JFhQn6vT89zd6kWAA_vbgVx",
   },
