@@ -17,6 +17,19 @@
     </header>
 
     <main>
+      <div class="toolbar">
+        <button type="button" class="btn-filter" id="toggle-sold" aria-pressed="false">
+          Ocultar vendidos
+        </button>
+        <label class="sort-label" for="sort-price">
+          Ordenar
+          <select id="sort-price">
+            <option value="default">Padrão</option>
+            <option value="asc">Menor preço</option>
+            <option value="desc">Maior preço</option>
+          </select>
+        </label>
+      </div>
       <div class="grid" id="gallery"></div>
     </main>
 
@@ -25,8 +38,13 @@
     <script src="/items.js"></script>
     <script>
       const gallery = document.getElementById("gallery");
+      const toggleSoldBtn = document.getElementById("toggle-sold");
+      const sortSelect = document.getElementById("sort-price");
 
-      ITEMS.forEach((item) => {
+      let hideSold = false;
+      let sortMode = "default";
+
+      function createCard(item) {
         const sold = Boolean(item.sold);
         const hasDrive =
           !sold && item.driveUrl && item.driveUrl !== "COLOQUE_O_LINK_AQUI";
@@ -81,8 +99,51 @@
           </div>
           ${bodyHtml}
         `;
-        gallery.appendChild(card);
+        return card;
+      }
+
+      function getVisibleItems() {
+        let list = ITEMS.slice();
+
+        if (hideSold) {
+          list = list.filter((item) => !item.sold);
+        }
+
+        if (sortMode === "asc" || sortMode === "desc") {
+          list.sort((a, b) => {
+            if (a.sold && !b.sold) return 1;
+            if (!a.sold && b.sold) return -1;
+            const priceA = a.price == null ? Number.POSITIVE_INFINITY : a.price;
+            const priceB = b.price == null ? Number.POSITIVE_INFINITY : b.price;
+            return sortMode === "asc" ? priceA - priceB : priceB - priceA;
+          });
+        }
+
+        return list;
+      }
+
+      function renderGallery() {
+        gallery.innerHTML = "";
+        getVisibleItems().forEach((item) => {
+          gallery.appendChild(createCard(item));
+        });
+      }
+
+      toggleSoldBtn.addEventListener("click", () => {
+        hideSold = !hideSold;
+        toggleSoldBtn.setAttribute("aria-pressed", String(hideSold));
+        toggleSoldBtn.textContent = hideSold
+          ? "Mostrar vendidos"
+          : "Ocultar vendidos";
+        renderGallery();
       });
+
+      sortSelect.addEventListener("change", () => {
+        sortMode = sortSelect.value;
+        renderGallery();
+      });
+
+      renderGallery();
     </script>
   </body>
 </html>

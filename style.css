@@ -37,6 +37,52 @@ main {
   padding: 1rem;
 }
 
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.btn-filter {
+  appearance: none;
+  border: 1px solid #d4d4d8;
+  background: #fff;
+  color: #18181b;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-filter[aria-pressed="true"] {
+  background: #18181b;
+  border-color: #18181b;
+  color: #fff;
+}
+
+.sort-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #52525b;
+}
+
+.sort-label select {
+  font: inherit;
+  font-weight: 600;
+  color: #18181b;
+  background: #fff;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
