@@ -97,13 +97,6 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/10pPZEcoVqE_--xJC84gqcAw1Td1zIPBF",
   },
   {
-    id: "prateleira",
-    name: "Prateleira",
-    details: "2,00 L × 35 P",
-    price: 100,
-    cover: "/covers/prateleira.jpeg",
-  },
-  {
     id: "vendido-tv",
     name: "TV Philips Ambilight 50 polegadas",
     sold: true,
