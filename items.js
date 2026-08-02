@@ -79,6 +79,7 @@ const ITEMS = [
     details: "Modelo KV 3.1i",
     price: 100,
     cover: "/covers/bicicleta-ergometrica.jpeg",
+    driveUrl: "https://drive.google.com/drive/folders/18EhCCZ62Akh7xNIdWkJQE8OOi0h8IJNY",
   },
   {
     id: "mesa-centro",
