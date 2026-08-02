@@ -1,6 +1,7 @@
 const WHATSAPP = "5551993022314";
 
 const ITEMS = [
+  // Disponíveis
   {
     id: "cozinha",
     name: "Cozinha (armários e pia)",
@@ -16,24 +17,6 @@ const ITEMS = [
     price: 120,
     cover: "/covers/fogao-venax.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1_2AmGBy1wKoEIvsT-K7-QXAneDMuK1GG",
-  },
-  {
-    id: "vendido-botijao-gas",
-    name: "Botijão de gás + válvula e suporte",
-    sold: true,
-    cover: "/covers/vendido-botijao-gas.jpeg",
-  },
-  {
-    id: "vendido-geladeira",
-    name: "Geladeira Electrolux",
-    sold: true,
-    cover: "/covers/vendido-geladeira.jpeg",
-  },
-  {
-    id: "vendido-sofa",
-    name: "Sofá",
-    sold: true,
-    cover: "/covers/vendido-sofa.jpeg",
   },
   {
     id: "sofa-marrom",
@@ -60,26 +43,12 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1Yw6lWROola1duVbAG0_Z1BJVH-uVw-rI",
   },
   {
-    id: "vendido-mi-band-7",
-    name: "Mi Band 7",
-    sold: true,
-    cover: "/covers/vendido-mi-band-7.jpeg",
-  },
-  {
     id: "estante-preta",
     name: "Estante / bar preto",
     details: "2,35 L · formato irregular · monta e desmonta",
     price: 400,
     covers: ["/covers/estante-preta.jpeg", "/covers/estante-preta-desmontado.jpeg"],
     driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
-  },
-  {
-    id: "bicicleta-ergometrica",
-    name: "Bicicleta ergométrica Kikos",
-    details: "Modelo KV 3.1i",
-    price: 100,
-    cover: "/covers/bicicleta-ergometrica.jpeg",
-    driveUrl: "https://drive.google.com/drive/folders/18EhCCZ62Akh7xNIdWkJQE8OOi0h8IJNY",
   },
   {
     id: "mesa-centro",
@@ -97,18 +66,6 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/10pPZEcoVqE_--xJC84gqcAw1Td1zIPBF",
   },
   {
-    id: "vendido-tv",
-    name: "TV Philips Ambilight 50 polegadas",
-    sold: true,
-    cover: "/covers/vendido-tv.jpeg",
-  },
-  {
-    id: "vendido-armario-branco",
-    name: "Armário branco",
-    sold: true,
-    cover: "/covers/vendido-armario-branco.jpeg",
-  },
-  {
     id: "guarda-roupa-marrom",
     name: "Guarda-roupa marrom",
     details: "1,60 L × 2,00 A × 45 P",
@@ -124,18 +81,62 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1-Of--6apzRDsAMpa01noy7cyTD0hxd2K",
   },
   {
-    id: "vendido-sapateira",
-    name: "Sapateira / armário organizador",
-    sold: true,
-    cover: "/covers/vendido-sapateira.jpeg",
-  },
-  {
     id: "rack-tv",
     name: "Rack para TV",
     details: "1,60 L × 40 P",
     price: 120,
     cover: "/covers/rack-tv.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1wEn58ETMXmnKT-EOVxRUmjMb9mB6bPUm",
+  },
+
+  // Vendidos
+  {
+    id: "vendido-bicicleta-ergometrica",
+    name: "Bicicleta ergométrica Kikos",
+    sold: true,
+    cover: "/covers/vendido-bicicleta-ergometrica.jpeg",
+  },
+  {
+    id: "vendido-botijao-gas",
+    name: "Botijão de gás + válvula e suporte",
+    sold: true,
+    cover: "/covers/vendido-botijao-gas.jpeg",
+  },
+  {
+    id: "vendido-geladeira",
+    name: "Geladeira Electrolux",
+    sold: true,
+    cover: "/covers/vendido-geladeira.jpeg",
+  },
+  {
+    id: "vendido-sofa",
+    name: "Sofá",
+    sold: true,
+    cover: "/covers/vendido-sofa.jpeg",
+  },
+  {
+    id: "vendido-mi-band-7",
+    name: "Mi Band 7",
+    sold: true,
+    cover: "/covers/vendido-mi-band-7.jpeg",
+  },
+  {
+    id: "vendido-tv",
+    name: "TV Philips Ambilight 50 polegadas",
+    sold: true,
+    cover: "/covers/vendido-tv.jpeg",
+  },
+  {
+    id: "vendido-armario-branco",
+    name: "Armário branco",
+    sold: true,
+    cover: "/covers/vendido-armario-branco.jpeg",
+  },
+  {
+    id: "vendido-sapateira",
+    name: "Sapateira / armário organizador",
+    sold: true,
+    cover: "/covers/vendido-sapateira.jpeg",
   },
 ];
 
