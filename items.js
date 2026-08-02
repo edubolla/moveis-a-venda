@@ -67,11 +67,18 @@ const ITEMS = [
   },
   {
     id: "estante-preta",
-    name: "Estante preta / balcão",
-    details: "2,35 L · formato irregular",
+    name: "Estante / bar preto",
+    details: "2,35 L · formato irregular · monta e desmonta",
     price: 400,
-    cover: "/covers/estante-preta.jpeg",
+    covers: ["/covers/estante-preta.jpeg", "/covers/estante-preta-desmontado.jpeg"],
     driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
+  },
+  {
+    id: "bicicleta-ergometrica",
+    name: "Bicicleta ergométrica Kikos",
+    details: "Modelo KV 3.1i",
+    price: 100,
+    cover: "/covers/bicicleta-ergometrica.jpeg",
   },
   {
     id: "mesa-centro",
