@@ -11,14 +11,6 @@ const ITEMS = [
     driveUrl: "https://drive.google.com/drive/folders/1RXtLRrOJRiKtKUh987-InBSDQVoIsuwm",
   },
   {
-    id: "fogao-venax",
-    name: "Fogão Venax",
-    details: "Forno não está funcionando.",
-    price: 120,
-    cover: "/covers/fogao-venax.jpeg",
-    driveUrl: "https://drive.google.com/drive/folders/1_2AmGBy1wKoEIvsT-K7-QXAneDMuK1GG",
-  },
-  {
     id: "sofa-marrom",
     name: "Sofá marrom 4 lugares",
     details: "Retrátil dos dois lados · 2,15 L × 100 P",
@@ -41,14 +33,6 @@ const ITEMS = [
     price: 120,
     cover: "/covers/air-fryer-nell.jpeg",
     driveUrl: "https://drive.google.com/drive/folders/1Yw6lWROola1duVbAG0_Z1BJVH-uVw-rI",
-  },
-  {
-    id: "estante-preta",
-    name: "Estante / bar preto",
-    details: "2,35 L · formato irregular · monta e desmonta",
-    price: 400,
-    covers: ["/covers/estante-preta.jpeg", "/covers/estante-preta-desmontado.jpeg"],
-    driveUrl: "https://drive.google.com/drive/folders/1OFUoyskBtCwRYy14tljh7lDfTg2Jyx0M",
   },
   {
     id: "mesa-centro",
@@ -90,6 +74,18 @@ const ITEMS = [
   },
 
   // Vendidos
+  {
+    id: "vendido-fogao-venax",
+    name: "Fogão Venax",
+    sold: true,
+    cover: "/covers/vendido-fogao-venax.jpeg",
+  },
+  {
+    id: "vendido-estante-preta",
+    name: "Estante / bar preto",
+    sold: true,
+    cover: "/covers/vendido-estante-preta.jpeg",
+  },
   {
     id: "vendido-bicicleta-ergometrica",
     name: "Bicicleta ergométrica Kikos",
